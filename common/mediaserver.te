@@ -45,3 +45,6 @@ allow mediaserver audio_data_file:dir remove_name;
 
 #allow mediaserver to communicate with diag
 diag_rw(mediaserver);
+
+#Allow mediaserver to set camera  properties
+allow mediaserver camera_prop:property_service set;
