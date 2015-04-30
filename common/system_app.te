@@ -46,3 +46,6 @@ allow system_app usf_prop:property_service set;
 
 #Allow access to camera properties to be set
 allow system_app camera_prop:property_service set;
+
+# allow system_app to interact with imscm daemon
+binder_call(system_app, imscm)

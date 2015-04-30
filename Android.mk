@@ -41,6 +41,7 @@ BOARD_SEPOLICY_UNION := \
        audiod.te \
        service.te \
        system_app.te \
+       platform_app.te \
        thermal-engine.te \
        vm_bms.te \
        system_app.te \
