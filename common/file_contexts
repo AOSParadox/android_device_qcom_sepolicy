@@ -178,6 +178,7 @@
 /system/bin/usf_sw_calib                        u:object_r:usf_exec:s0
 /system/bin/usf_pairing                         u:object_r:usf_exec:s0
 /system/bin/usf_tester                          u:object_r:usf_exec:s0
+/system/vendor/bin/RIDLClient.exe               u:object_r:RIDL_exec:s0
 
 ###################################
 # sysfs files
@@ -246,6 +247,7 @@
 /data/misc/hbtp(/.*)?                                               u:object_r:hbtp_log_file:s0
 /data/misc/qlogd(/.*)?                                              u:object_r:qlogd_data_file:s0
 /data/usf(/.*)?                                                     u:object_r:usf_data_file:s0
+/data/SelfHost(/.*)?                                                u:object_r:RIDL_data_file:s0
 
 ###################################
 # persist files

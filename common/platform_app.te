@@ -27,3 +27,10 @@
 
 #Allow platform apps to interact with imscm daemon
 binder_call(platform_app, imscm)
+
+# USERDEBUG for RIDL/LogKit II
+userdebug_or_eng(`
+  allow platform_app RIDL_data_file:dir { read write remove_name search add_name getattr open };
+  allow platform_app RIDL_data_file:file { read write getattr open lock create unlink setattr };
+  allow platform_app RIDL_data_file:lnk_file { read getattr };
+')
