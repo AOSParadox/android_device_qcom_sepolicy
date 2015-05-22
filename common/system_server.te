@@ -79,3 +79,6 @@ allow system_server tee_device:chr_file rw_file_perms;
 
 #diag read/write
 diag_rw(system_server);
+
+#For FRP
+allow system_server persistent_data_block_device:blk_file rw_file_perms;
