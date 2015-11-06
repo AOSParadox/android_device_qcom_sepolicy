@@ -86,3 +86,7 @@ use_per_mgr(mediaserver);
 
 #allow IPCam service
 allow mediaserver qipcam_service:service_manager add;
+
+# Allow mediaserver to search and get the widevine, playready firmwares
+allow mediaserver firmware_file:dir search;
+allow mediaserver firmware_file:file { read getattr open };
