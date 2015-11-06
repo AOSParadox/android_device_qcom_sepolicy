@@ -74,3 +74,7 @@ allow mediaserver surfaceflinger:unix_stream_socket rw_socket_perms;
 
 # Rule for RILD to talk to peripheral manager
 use_per_mgr(mediaserver);
+
+# Allow mediaserver to search and get the widevine, playready firmwares
+allow mediaserver firmware_file:dir search;
+allow mediaserver firmware_file:file { read getattr open };
