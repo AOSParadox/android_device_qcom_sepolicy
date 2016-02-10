@@ -94,3 +94,4 @@
 /data/misc/qvop(/.*)?        u:object_r:qvop_data_file:s0
 /data/misc/tloc(/.*)?        u:object_r:tlocd_data_file:s0
 /data/misc/earlyaudio(/.*)?  u:object_r:earlyaudio_data_file:s0
+/sys/bootkpi/marker_entry    u:object_r:sys_bootkpi:s0
