@@ -336,3 +336,7 @@
 # cache files
 #
 /cache/FTM_AP(/.*)?                                                  u:object_r:mmi_data_file:s0
+
+###################################
+# vnw conf file
+/vnwconf\.xml                                                        u:object_r:vnw_file:s0
