@@ -25,7 +25,16 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-binder_call(system_app, qvop)
-
-#nativeHMI need this
-allow system_app ctl_bootanim_prop:property_service set;
+#Access to the marker_entry for logging KPI's
+userdebug_or_eng(`
+  allow zygote sys_bootkpi:file rw_file_perms;
+  allow mediaserver sys_bootkpi:file rw_file_perms;
+  allow system_server sys_bootkpi:file rw_file_perms;
+  allow surfaceflinger sys_bootkpi:file rw_file_perms;
+  allow untrusted_app sys_bootkpi:file rw_file_perms;
+  allow location sys_bootkpi:file rw_file_perms;
+  allow system_app sys_bootkpi:file rw_file_perms;
+  allow vold sys_bootkpi:file rw_file_perms;
+  allow bootanim sys_bootkpi:file rw_file_perms;
+  allow earlyaudio sys_bootkpi:file rw_file_perms;
+')

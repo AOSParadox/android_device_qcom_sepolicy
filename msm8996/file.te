@@ -30,3 +30,5 @@ type qvop_data_file, file_type, data_file_type;
 
 #TLOC Files
 type tlocd_data_file, file_type, data_file_type;
+type qtimusic_app_data_file, file_type, data_file_type;
+type earlyaudio_data_file, file_type, data_file_type;

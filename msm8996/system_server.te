@@ -25,7 +25,5 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-binder_call(system_app, qvop)
-
-#nativeHMI need this
-allow system_app ctl_bootanim_prop:property_service set;
+allow system_server qtimusic_app_data_file:file rw_file_perms;
+allow system_server qtimusic_app_data_file:dir r_dir_perms;
