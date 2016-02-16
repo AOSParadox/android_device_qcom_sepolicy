@@ -31,3 +31,4 @@ sys.mediaserver.ready          u:object_r:audio_prop:s0
 early.audionative.id           u:object_r:audio_prop:s0
 early.audio.start              u:object_r:audio_prop:s0
 early.audioapp.id              u:object_r:audio_prop:s0
+early.audio.volume             u:object_r:audio_prop:s0
