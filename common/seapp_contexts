@@ -16,6 +16,3 @@ user=system seinfo=platform name=com.qualcomm.qti.securemsm.mdtp.MdtpService dom
 
 #Add new domain for QtiTetherService
 user=system seinfo=platform name=com.qualcomm.qti.tetherservice domain=qtitetherservice_app type=qtitetherservice_app_data_file
-
-#Add new domain for VehicelService
-user=_app seinfo=platform name=com.qualcomm.qti.vnwboot* domain=vnwvehicleservice_app type=vnwvehicleservice_app_data_file
