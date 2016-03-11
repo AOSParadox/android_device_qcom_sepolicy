@@ -83,3 +83,6 @@ set_prop(mediaserver, dolby_prop)
 
 # Rule for RILD to talk to peripheral manager
 use_per_mgr(mediaserver);
+
+#allow IPCam service
+allow mediaserver qipcam_service:service_manager add;
