@@ -123,3 +123,7 @@ unix_socket_send(system_server, seempdw, seempd)
 
 # allow tethering to access dhcp leases
 r_dir_file(system_server, dhcp_data_file)
+#memsic
+allow system_server mmc3x30_device:chr_file { open read write ioctl};
+allow system_server mmc3x30_otp:file { read getattr open };
+allow system_server mmc3x30_set:file { write getattr open };

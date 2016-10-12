@@ -63,6 +63,9 @@
 /dev/at_.*                                      u:object_r:at_device:s0
 /dev/sg.*                                       u:object_r:sg_device:s0
 
+/dev/mmc3x30                                    u:object_r:mmc3x30_device:s0
+/sys/bus/i2c/devices/1-0030/otp                 u:object_r:mmc3x30_otp:s0
+/sys/bus/i2c/devices/1-0030/set                 u:object_r:mmc3x30_set:s0
 ###################################
 # Dev block nodes
 #

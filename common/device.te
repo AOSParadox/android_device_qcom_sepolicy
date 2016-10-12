@@ -119,3 +119,6 @@ type avtimer_device, dev_type;
 
 #define AT device
 type at_device, dev_type;
+
+#memsic device
+type mmc3x30_device, dev_type;
