@@ -37,3 +37,6 @@ r_dir_file(surfaceflinger, firmware_file)
 
 #Allow access to fastmmi
 binder_call(surfaceflinger, mmi)
+
+binder_call(surfaceflinger, mm-qcamerad)
+binder_call(surfaceflinger, mm-pp-daemon)
