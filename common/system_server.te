@@ -113,6 +113,8 @@ use_per_mgr(system_server);
 
 #allow binder calls
 binder_call(system_server, seempd)
+binder_call(surfaceflinger, mm-qcamerad)
+binder_call(surfaceflinger, mm-pp-daemon)
 
 # Allow system server access to qfp daemon
 binder_call(system_server, qfp-daemon);
